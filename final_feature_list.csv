@@ -1,0 +1,29 @@
+variable,form,category,justification
+NACCID,Form header,identifier,Subject ID - keep for grouping/splitting, not as a model feature
+BIRTHMO,A1,demographic,Birth month
+BIRTHYR,A1,demographic,Birth year
+NACCAGEB,A1,demographic,Derived baseline age at initial visit
+SEX,A1,demographic,Sex
+HISPANIC,A1,demographic,Hispanic/Latino ethnicity
+HISPOR,A1,demographic,Hispanic origin subgroup
+RACE,A1,demographic,Primary race
+RACESEC,A1,demographic,Secondary race
+RACETER,A1,demographic,Tertiary race
+PRIMLANG,A1,demographic,Primary language
+EDUC,A1,socioeconomic,Years of education
+MARISTAT,A1,social,Marital status
+NACCLIVS,A1,social,Living situation
+RESIDENC,A1,social,Type of residence
+HANDED,A1,demographic,Handedness
+TOBAC30,A5,lifestyle,Smoked in last 30 days
+TOBAC100,A5,lifestyle,Smoked 100+ cigarettes lifetime
+SMOKYRS,A5,lifestyle,Total years smoked
+PACKSPER,A5,lifestyle,Average packs per day
+QUITSMOK,A5,lifestyle,Age quit smoking
+ALCOCCAS,A5,lifestyle,Any alcohol consumption in last 3 months
+ALCFREQ,A5,lifestyle,Frequency of alcohol consumption
+INRELTO,A2,social,Co-participant's relationship to subject
+INKNOWN,A2,social,How long co-participant has known subject
+INLIVWTH,A2,social,Whether co-participant lives with subject
+INVISITS,A2,social,Frequency of co-participant in-person visits (social engagement proxy)
+INCALLS,A2,social,Frequency of co-participant telephone contact (social engagement proxy)
