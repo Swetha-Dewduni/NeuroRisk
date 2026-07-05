@@ -30,6 +30,7 @@ except Exception as e:
     st.error(f"Could not load feature importance from API: {e}")
     st.stop()
 
+fi_df = fi_df.rename(columns={"Unnamed: 0": "feature"})
 fi_df = fi_df.sort_values("mean_abs_shap", ascending=True)
 
 # ---------------------------------------------------------------------------
