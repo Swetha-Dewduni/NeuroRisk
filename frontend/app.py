@@ -43,9 +43,13 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.subheader("Demographics")
     birthyr   = st.number_input("Birth Year", min_value=1880, max_value=2010, value=1945)
-    naccageb  = st.number_input("Age at Baseline Visit", min_value=0, max_value=120, value=75)
+    #naccageb  = st.number_input("Age at Baseline Visit", min_value=0, max_value=120, value=75)
+    import datetime
+
+    naccageb = datetime.datetime.now().year - birthyr  # derived from birth year
     sex       = st.selectbox("Sex", options=[1, 2], format_func=lambda x: "Male" if x == 1 else "Female")
-    hispanic  = st.selectbox("Hispanic/Latino", options=[0, 1], format_func=lambda x: "No" if x == 0 else "Yes")
+    #hispanic  = st.selectbox("Hispanic/Latino", options=[0, 1], format_func=lambda x: "No" if x == 0 else "Yes")
+    hispanic = 0  # default: Non-Hispanic
     race      = st.selectbox("Primary Race", options=[1, 2, 3, 4, 5, 50],
                               format_func=lambda x: {1:"White", 2:"Black/African American",
                                                      3:"American Indian/Alaska Native",
@@ -79,7 +83,7 @@ with col2:
                                                      6:"Friend", 7:"Other"}[x])
     inlivwth  = st.selectbox("Co-participant Lives With Subject", options=[0, 1],
                               format_func=lambda x: "No" if x == 0 else "Yes")
-    invisits  = st.selectbox("In-Person Visit Frequency", options=[1, 2, 3, 4, 5, 6, 7],
+    invisits  = st.selectbox("How often does your closest contact visit you in person?", options=[1, 2, 3, 4, 5, 6, 7],
                               format_func=lambda x: {1:"Daily", 2:"≥3x/week", 3:"Weekly",
                                                      4:"≥3x/month", 5:"Monthly",
                                                      6:"<Monthly", 7:"Lives with subject"}[x])
