@@ -77,17 +77,17 @@ with col2:
                                                      2:"Retirement community",
                                                      3:"Assisted living",
                                                      4:"Skilled nursing facility"}[x])
-    inrelto   = st.selectbox("Co-participant Relationship", options=[1, 2, 3, 4, 5, 6, 7],
+    inrelto   = st.selectbox("Your relationship to your closest family member or friend", options=[1, 2, 3, 4, 5, 6, 7],
                               format_func=lambda x: {1:"Spouse/partner", 2:"Child", 3:"Sibling",
                                                      4:"Other relative", 5:"Paid caregiver",
                                                      6:"Friend", 7:"Other"}[x])
-    inlivwth  = st.selectbox("Co-participant Lives With Subject", options=[0, 1],
+    inlivwth  = st.selectbox("Does this person live with you?", options=[0, 1],
                               format_func=lambda x: "No" if x == 0 else "Yes")
-    invisits  = st.selectbox("How often does your closest contact visit you in person?", options=[1, 2, 3, 4, 5, 6, 7],
+    invisits  = st.selectbox("How often do you see your closest family member or friend?", options=[1, 2, 3, 4, 5, 6, 7],
                               format_func=lambda x: {1:"Daily", 2:"≥3x/week", 3:"Weekly",
                                                      4:"≥3x/month", 5:"Monthly",
                                                      6:"<Monthly", 7:"Lives with subject"}[x])
-    incalls   = st.selectbox("Phone Call Frequency", options=[1, 2, 3, 4, 5, 6, 7],
+    incalls   = st.selectbox("How often do you speak on the phone with this person?", options=[1, 2, 3, 4, 5, 6, 7],
                               format_func=lambda x: {1:"Daily", 2:"≥3x/week", 3:"Weekly",
                                                      4:"≥3x/month", 5:"Monthly",
                                                      6:"<Monthly", 7:"Lives with subject"}[x])
