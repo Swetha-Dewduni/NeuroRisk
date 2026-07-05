@@ -19,7 +19,7 @@ st.markdown("---")
 # Load the processed dataset
 # Note: for deployment, store step2_final_clean.csv in frontend/data/
 # ---------------------------------------------------------------------------
-DATA_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "step2_final_clean.csv")
+DATA_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "step3_full.csv")
 
 @st.cache_data
 def load_data():
