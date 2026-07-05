@@ -90,7 +90,7 @@ with col2:
     incalls   = st.selectbox("How often do you speak on the phone with this person?", options=[1, 2, 3, 4, 5, 6, 7],
                               format_func=lambda x: {1:"Daily", 2:"≥3x/week", 3:"Weekly",
                                                      4:"≥3x/month", 5:"Monthly",
-                                                     6:"<Monthly", 7:"Lives with subject"}[x])
+                                                     6:"<Monthly", 7:"Lives with this person"}[x])
 
 with col3:
     st.subheader("Lifestyle / Smoking")
