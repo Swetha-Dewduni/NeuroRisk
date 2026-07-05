@@ -10,7 +10,7 @@ st.set_page_config(
 # ---------------------------------------------------------------------------
 # Config — update API_URL to your deployed Render backend URL
 # ---------------------------------------------------------------------------
-API_URL = "https://your-backend.onrender.com"   # <-- update after deploying backend
+API_URL = "https://swetha2003-dementia-risk-api.hf.space"   # <-- update after deploying backend
 
 import requests
 import pandas as pd

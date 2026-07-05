@@ -6,7 +6,7 @@ import plotly.express as px
 
 st.set_page_config(page_title="Model Insights", page_icon="🔍", layout="wide")
 
-API_URL = "https://your-backend.onrender.com"   # <-- update after deploying backend
+API_URL = "https://swetha2003-dementia-risk-api.hf.space"   # <-- update after deploying backend
 
 st.title("🔍 Model Insights")
 st.markdown(
