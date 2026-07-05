@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="Dementia Risk Predictor",
+    page_title="NeuroRisk",
     page_icon="🧠",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -17,7 +17,7 @@ import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
 
-st.sidebar.title("🧠 Dementia Risk Predictor")
+st.sidebar.title("🧠 NeuroRisk - Dementia Risk Predictor")
 st.sidebar.markdown(
     "This tool predicts dementia risk using only **non-medical variables** "
     "(demographics, lifestyle, social engagement) — no clinical tests required."
@@ -31,10 +31,10 @@ st.sidebar.markdown("**Test ROC-AUC:** 0.7306")
 # ---------------------------------------------------------------------------
 # Page: Risk Predictor
 # ---------------------------------------------------------------------------
-st.title("🧠 Dementia Risk Predictor")
+st.title("🧠 NeuroRisk - Dementia Risk Predictor")
 st.markdown(
-    "Enter the subject's information below. The model will estimate their "
-    "probability of being at risk for dementia based on non-medical factors only."
+    "Fill in the details below to get a personalised dementia risk score based on everyday lifestyle factors — no medical history needed. "
+
 )
 st.markdown("---")
 
