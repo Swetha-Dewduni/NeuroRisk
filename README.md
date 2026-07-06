@@ -19,7 +19,13 @@ A full-stack machine learning project that predicts dementia risk using **only n
 | **API** | [swetha2003-dementia-risk-api.hf.space/docs](https://swetha2003-dementia-risk-api.hf.space/docs) |
 
 ---
+## 📸 Screenshots
+![Risk Predictor](screenshots/predictor.png)
+![Model Insights](screenshots/model_insights.png)
+![Model Performance](screenshots/model-performance.png)
+![Data Explorer](screenshots/data-explorer.png)
 
+---
 ## 🎯 Project Motivation
 
 Most dementia risk models rely on clinical data — cognitive test scores, biomarkers, or diagnostic history — that require medical access and expertise. This project asks a different question:
